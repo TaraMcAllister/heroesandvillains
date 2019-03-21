@@ -1,0 +1,80 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #D4CCBA;
+  color: #280D03;
+}
+
+/* GENERAL TYPOGRAPHY */
+
+h1, h2, h3, h4 {
+    font-family: 'Neuton', 'Georgia', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+p {
+  font-family: 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+@font-face {
+  font-family: Pigeon;
+  /* Credit to Dai Foldes / Lost Typeface Co-op */
+  src: url(Pigeon.otf);
+}
+
+a {
+  font-family: 'Pigeon', 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #280D03;
+  text-decoration: none;
+}
+
+blockquote {
+  font-family: 'Pigeon', 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-family: 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.dropcap {
+  font-family: 'PT Serif', 'Georgia', sans-serif;
+  font-size: 2rem;
+}
