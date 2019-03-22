@@ -42,6 +42,12 @@ h4 {
   font-size: 1rem;
 }
 
+.header__title {
+  font-family: 'Neuton', 'Georgia', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 p {
   font-family: 'PT Serif', 'Georgia', serif;
   font-weight: 400;
@@ -78,4 +84,48 @@ footer {
   font-family: 'PT Serif', 'Georgia', sans-serif;
   font-size: 2rem;
   display: inline;
+}
+
+/* HEADER */
+
+.header__title .divider {
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+
+.header__info {
+  display: inline-flex;
+}
+
+.header__info--issue {
+  position: relative;
+  left: 0;
+  margin-left: 2rem;
+}
+
+.header__info--date {
+  position: absolute;
+  left: 43vw;
+  text-transform: capitalize;
+}
+
+.header__info--price {
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+}
+
+.second__divider {
+  margin-top: 0.2rem;
+}
+
+/* DIVIDERS  */
+
+.divider {
+  border: #280D03 1px solid;
+}
+
+.divider--small {
+  border: #280D03 1px solid;
+  width: 33.33%;
 }
