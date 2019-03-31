@@ -150,3 +150,12 @@ footer {
 .column__third {
   grid-column: 4/4;
 }
+
+/* WINE AD */
+
+.wine-holder-text {
+  display: flex;
+}
+.wine-holder {
+  display: inline;
+}
