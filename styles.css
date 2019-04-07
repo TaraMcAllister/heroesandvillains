@@ -134,28 +134,94 @@ footer {
 /* GRID */
 
 .grid {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: 
+      "hd hd hd hd hd"
+      "he he he vi vi"
+      "he he he mn si"
+      "he he he um si"
+      "wd vi vi jb si"
+      "wd vi vi jb si"
+      "cp vi vi pi si"
+      "ba ba bi bo bo"
+      "ba ba st st sh"
+      "ba ba mp mp cr"; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.2rem;
 }
 
-.column__first {
-  grid-column: 1/3;
+.header__title {
+  grid-area: hd;
 }
 
-.column__second {
-  grid-column: 3/3;
+.column__first--heroes {
+  grid-area: he;
 }
 
-.column__third {
-  grid-column: 4/4;
+.column__first--wedding {
+  grid-area: wd;
+}
+
+.column__first--ad {
+  grid-area: cp;
+}
+
+.column__first--221b {
+  grid-area: ba;
+}
+
+.column__second--villains {
+  grid-area: vi;
+}
+
+.column__third--birth {
+  grid-area: bh;
+}
+
+.column__third--steerage {
+  grid-area: st;
+}
+
+.column__third--makeup {
+  grid-area: mp;
+}
+
+.column__four--violin {
+  grid-area: vi;
+}
+
+.column__four--man {
+  grid-area: mn;
+}
+
+.column__four--umbrella {
+  grid-area: um;
+}
+
+.column__four--content {
+  grid-area: ju;
+}
+
+.column__four--pipe {
+  grid-area: pi;
+}
+
+.column__five--silver {
+  grid-area: si;
+}
+
+.column__five--ad {
+  grid-area: sh;
+}
+
+.column__five--credits {
+  grid-area: cr;
 }
 
 /* WINE AD */
 
-.wine-holder-text {
-  display: flex;
-}
 .wine-holder {
   display: inline;
 }
