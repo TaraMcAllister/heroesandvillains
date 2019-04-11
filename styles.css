@@ -26,20 +26,58 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 3.6rem;
+  text-align: justify;
+  text-align-last: justify;
+  letter-spacing: 4px;
+  line-height: 30px;
+  padding: 0 0 1rem 0;
+}
+
+h1:after {
+  content: ”;
+  display: inline-block;
+  width: 100%;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h4 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Pigeon', 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  padding: 0.2rem 0 0 0;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+h4:after {
+    content: ”;
+    display: inline-block;
+    width: 100%;
+}
+
+figcaption {
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-family: 'Pigeon', 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  padding: 0.2rem 0 0.2rem 0;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+figcaption:after {
+  content: ”;
+  display: inline-block;
+  width: 100%;
 }
 
 .header__title {
@@ -54,10 +92,19 @@ p {
   font-size: 0.85rem;
 }
 
+p + p {
+  text-indent: 1rem;
+}
+
 @font-face {
   font-family: Pigeon;
   /* Credit to Dai Foldes / Lost Typeface Co-op */
   src: url(Pigeon.otf);
+}
+
+@font-face {
+  font-family: Regitta;
+  src: url(Regattia-Bold.otf);
 }
 
 a {
@@ -73,6 +120,8 @@ blockquote {
   font-weight: 400;
   font-size: 1.5rem;
   border-left: solid 4px #280D03; 
+  margin: 0.3rem 0 0.3rem 0;
+  padding: 0 0 0 0.2rem;
 }
 
 footer {
@@ -88,6 +137,19 @@ footer {
 }
 
 /* HEADER */
+
+.header__title--image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title__container {
+  height: 7rem;
+  width: 27rem;
+  background-color: #280D03;
+  margin: 0.5rem 0 0.5rem 0;
+}
 
 .header__title .divider {
  margin-left: 1rem;
@@ -126,7 +188,13 @@ footer {
   border: #280D03 1px solid;
 }
 
+.container__divider--small {
+  display: flex;
+  justify-content: center;
+}
+
 .divider--small {
+  margin: 0.2rem 0 0 0;
   border: #280D03 1px solid;
   width: 33.33%;
 }
@@ -143,7 +211,7 @@ footer {
       "head head head head head"
       "hero hero hero viol viol"
       "hero hero hero mans silv"
-      "hero hero hero umbr silv"
+      "hero hero hero jubi silv"
       "wedd vill vill jubi silv"
       "wedd vill vill jubi silv"
       "cham vill vill pipe silv"
@@ -151,7 +219,7 @@ footer {
       "bake bake ster ster shee"
       "bake bake make make cred"
       "foot foot foot foot foot"; 
-  grid-gap: 0.2rem;
+  grid-gap: 0.5rem;
 }
 
 .header__title {
@@ -202,10 +270,6 @@ footer {
   grid-area: mans;
 }
 
-.column__umbrella {
-  grid-area: umbr;
-}
-
 .column__jubilant {
   grid-area: jubi;
 }
@@ -234,4 +298,231 @@ footer {
 
 .wine-holder {
   display: inline;
+}
+
+/* HEROES */
+
+.heroes__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+.heroes__grid--item {
+  grid-column: 1/1;
+}
+
+.heroes__grid--image {
+  grid-column: 2/4;
+}
+
+.heroes--img {
+  height: 90%;
+  max-width: 100%;
+}
+
+/* WEDDING */
+
+.column__wedding h3 {
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 1.2rem;
+  letter-spacing: 9px;
+  line-height: 10px;
+  padding: 0 0 0.3rem 0;
+}
+
+/* CHAMPAGNE */
+
+.column__champagne h3 {
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 21px;
+  padding: 0 0 0.1rem 0;
+}
+
+.champ__holder--text {
+  clear: both;
+}
+
+.champ__holder--img {
+  float: left;
+  height: 90%;
+}
+
+/* VILLAINS */
+
+.column__villains h1 {
+    font-size: 3.3rem;
+    text-align: justify;
+    text-align-last: justify;
+    letter-spacing: 4px;
+    line-height: 30px;
+    padding: 0 0 1rem 0;
+  }
+  
+.column__villains h1:after {
+    content: ”;
+    display: inline-block;
+    width: 100%;
+}
+
+.villains__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.4rem;
+}
+
+.villains--mor {
+  grid-column: 1/1;
+}
+
+.villains--irene {
+  grid-column: 2/2;
+}
+
+.container__img--villain {
+  float: right;
+  padding: 0.4rem 0.2rem 0.2rem 0.2rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.container__content--villain {
+  clear: left;
+}
+
+.villain-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* VIOLIN */
+
+.violin--ad {
+  width: 95%;
+  height: 95%;
+  border: #280D03 solid 2px;
+}
+
+/* BAKER STREET */
+
+.baker__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.baker-street-img {
+  width: 100%;
+}
+
+/* MAN */
+
+.column__man h3 {
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 1.2rem;
+  line-height: 8px;
+  padding: 0 0 0.4rem 0;
+}
+
+.column__man p {
+  font-family: 'Pigeon', 'PT Serif', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.3rem 0 0.2rem 0;
+}
+
+/* JUBILANT */
+
+.column__jubilant h3 {
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 1.2rem;
+  letter-spacing: 2.3px;
+}
+
+/* SILVER */
+
+.column__silver h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  line-height: 8px;
+  padding: 0 0 0.4rem 0;
+}
+
+.finger__svg {
+  max-height: 0.9rem;
+  padding: 0 0 0 0.2rem;
+}
+
+a.silverscreen .finger__container{
+  visibility: hidden;
+}
+
+a.silverscreen:hover .finger__container{
+  visibility: visible;
+  transition: ease-in-out 0.5s;
+}
+
+a.silverscreen:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "head"
+        "head"
+        "hero"
+        "hero"
+        "hero"
+        "hero"
+        "viol"
+        "viol"
+        "mans"
+        "silv"
+        "silv"
+        "silv"
+        "silv"
+        "wedd"
+        "wedd"
+        "wedd"
+        "vill"
+        "vill"
+        "vill"
+        "vill"
+        "vill"
+        "vill"
+        "vill"
+        "pipe"
+        "bake"
+        "bake"
+        "bake"
+        "bake"
+        "jubi"
+        "jubi"
+        "jubi"
+        "birh"
+        "ster"
+        "ster"
+        "ster"
+        "book"
+        "book"
+        "cham"
+        "cham"
+        "make"
+        "make"
+        "make"
+        "shee"
+        "cred"
+        "foot";
+    grid-gap: 0.5rem;
+  }
 }
