@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   position: relative;
   min-height: 100%;
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 
 body {
   background-color: #D4CCBA;
@@ -134,101 +134,100 @@ footer {
 /* GRID */
 
 .grid {
-  grid-template-columns: repeat(5 1fr);
-  grid-template-areas: 
-      "hd hd hd hd hd"
-      "sd sd ma ma ma"
-      "sd sd ma ma ma"
-      "sd sd ft ft ft";
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-}
-
-.grid {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 100%;
-  height: 100vh;
+  grid-template-rows: auto;
   grid-template-areas: 
-      "hd hd hd hd hd"
-      "he he he vi vi"
-      "he he he mn si"
-      "he he he um si"
-      "wd vi vi jb si"
-      "wd vi vi jb si"
-      "cp vi vi pi si"
-      "ba ba bi bo bo"
-      "ba ba st st sh"
-      "ba ba mp mp cr"; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      "head head head head head"
+      "hero hero hero viol viol"
+      "hero hero hero mans silv"
+      "hero hero hero umbr silv"
+      "wedd vill vill jubi silv"
+      "wedd vill vill jubi silv"
+      "cham vill vill pipe silv"
+      "bake bake birh book book"
+      "bake bake ster ster shee"
+      "bake bake make make cred"
+      "foot foot foot foot foot"; 
   grid-gap: 0.2rem;
 }
 
 .header__title {
-  grid-area: hd;
+  grid-area: head;
 }
 
-.column__first--heroes {
-  grid-area: he;
+.column__heroes {
+  grid-area: hero;
 }
 
-.column__first--wedding {
-  grid-area: wd;
+.column__wedding {
+  grid-area: wedd;
 }
 
-.column__first--ad {
-  grid-area: cp;
+.column__champagne {
+  grid-area: cham;
 }
 
-.column__first--221b {
-  grid-area: ba;
+.column__baker {
+  grid-area: bake;
 }
 
-.column__second--villains {
-  grid-area: vi;
+.column__villains {
+  grid-area: vill;
 }
 
-.column__third--birth {
-  grid-area: bh;
+.column__birth {
+  grid-area: birh;
 }
 
-.column__third--steerage {
-  grid-area: st;
+.column__steerage {
+  grid-area: ster;
 }
 
-.column__third--makeup {
-  grid-area: mp;
+.column__makeup {
+  grid-area: make;
 }
 
-.column__four--violin {
-  grid-area: vi;
+.column__books {
+  grid-area: book;
 }
 
-.column__four--man {
-  grid-area: mn;
+.column__violin {
+  grid-area: viol;
 }
 
-.column__four--umbrella {
-  grid-area: um;
+.column__man {
+  grid-area: mans;
 }
 
-.column__four--content {
-  grid-area: ju;
+.column__umbrella {
+  grid-area: umbr;
 }
 
-.column__four--pipe {
-  grid-area: pi;
+.column__jubilant {
+  grid-area: jubi;
 }
 
-.column__five--silver {
-  grid-area: si;
+.column__pipe {
+  grid-area: pipe;
 }
 
-.column__five--ad {
-  grid-area: sh;
+.column__silver {
+  grid-area: silv;
 }
 
-.column__five--credits {
-  grid-area: cr;
+.column__sheep {
+  grid-area: shee;
+}
+
+.column__credits {
+  grid-area: cred;
+}
+
+.column__footer {
+  grid-area: foot;
 }
 
 /* WINE AD */
