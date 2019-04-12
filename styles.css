@@ -10,7 +10,6 @@
   position: relative;
   min-height: 100%;
   max-width: 100%;
-  overflow-x: hidden;
 } */
 
 body {
@@ -64,10 +63,18 @@ h4:after {
     width: 100%;
 }
 
-p, footer, .dropcap {
-  font-family: miller-text, serif;
+p, footer, tbody {
+  font-family: miller-text, 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
+}
+
+p:first-child:first-letter {
+  float: left;
+  font-family: miller-text, 'Georgia', serif;
+  font-size: 2rem;
+  line-height: 30px;
+  padding: 3px 3px 0 0;
 }
 
 figcaption {
@@ -92,7 +99,7 @@ figcaption:after {
   font-weight: 400;
 }
 
-p {
+p, tbody {
   font-size: 0.9rem;
 }
 
@@ -130,11 +137,6 @@ blockquote {
 
 footer {
   font-size: 0.85rem;
-}
-
-.dropcap {
-  font-size: 2rem;
-  display: inline;
 }
 
 /* HEADER */
@@ -492,9 +494,9 @@ a.silverscreen:hover {
   text-decoration: underline;
 }
 
-/* PIPE */
+/* PIPE AND SHEEP*/
 
-.column__pipe {
+.column__pipe, .column__sheep {
   border: #280D03 solid 2px;
   padding: 0.2rem;
 }
