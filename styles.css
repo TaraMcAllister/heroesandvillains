@@ -145,15 +145,10 @@ footer {
 }
 
 .title__container {
-  height: 7rem;
-  width: 27rem;
+  height: 10rem;
+  width: 35rem;
   background-color: #280D03;
   margin: 0.5rem 0 0.5rem 0;
-}
-
-.header__title .divider {
- margin-left: 1rem;
- margin-right: 1rem;
 }
 
 .header__info {
@@ -215,11 +210,13 @@ footer {
       "wedd vill vill jubi silv"
       "wedd vill vill jubi silv"
       "cham vill vill pipe silv"
-      "bake bake birh book book"
+      "bake bake ster ster birh"
       "bake bake ster ster shee"
+      "bake bake make make shee"
       "bake bake make make cred"
       "foot foot foot foot foot"; 
   grid-gap: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .header__title {
@@ -256,10 +253,6 @@ footer {
 
 .column__makeup {
   grid-area: make;
-}
-
-.column__books {
-  grid-area: book;
 }
 
 .column__violin {
@@ -402,7 +395,7 @@ footer {
 /* VIOLIN */
 
 .violin--ad {
-  width: 95%;
+  width: 100%;
   height: 95%;
   border: #280D03 solid 2px;
 }
@@ -414,8 +407,32 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
+.baker--img {
+  border: #280D03 solid 2px;
+}
+
 .baker-street-img {
   width: 100%;
+}
+
+.column__baker h1 {
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-size: 2.7rem;
+  padding: 0 0 0.3rem 0;
+}
+
+a.museum .finger__container{
+  visibility: hidden;
+}
+
+a.museum:hover .finger__container{
+  visibility: visible;
+  transition: ease-in-out 0.5s;
+}
+
+a.museum:hover {
+  text-decoration: underline;
 }
 
 /* MAN */
@@ -452,6 +469,8 @@ footer {
   letter-spacing: 0.5px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
+  text-align: justify;
+  text-align-last: justify;
 }
 
 .finger__svg {
@@ -472,6 +491,66 @@ a.silverscreen:hover {
   text-decoration: underline;
 }
 
+/* PIPE */
+
+.column__pipe {
+  border: #280D03 solid 2px;
+  padding: 0.2rem;
+}
+
+/* BIRTH */
+
+.column__birth h3 {
+  letter-spacing: 7px;
+  line-height: 8px;
+  padding: 0 0 0.4rem 0;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.column__birth {
+  text-align: justify;
+}
+
+/* STEERAGE */
+
+.column__steerage {
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+  height: auto;
+}
+
+/* MAKEUP */
+
+.column__makeup h2 {
+  font-size: 2rem;
+  text-align: justify;
+  text-align-last: justify;
+  margin-top: -2rem;
+}
+
+.makeup--img {
+  width: 100%;
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+.price__container {
+  display: flex;
+  align-content: center;
+}
+
+/* CREDITS */
+
+.column__credits h3 {
+  letter-spacing: 3.3px;
+  line-height: 8px;
+  padding: 0 0 0.4rem 0;
+  text-align: justify;
+  text-align-last: justify;
+}
 
 @media only screen and (max-width: 700px) {
   .grid {
