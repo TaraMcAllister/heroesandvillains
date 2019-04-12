@@ -21,7 +21,7 @@ body {
 /* GENERAL TYPOGRAPHY */
 
 h1, h2, h3, h4 {
-    font-family: 'Neuton', 'Georgia', serif;
+  font-family: 'Neuton', 'Georgia', serif;
   font-weight: 700;
 }
 
@@ -64,6 +64,12 @@ h4:after {
     width: 100%;
 }
 
+p, footer, .dropcap {
+  font-family: miller-text, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 figcaption {
   font-weight: 400;
   font-size: 0.9rem;
@@ -87,9 +93,7 @@ figcaption:after {
 }
 
 p {
-  font-family: 'PT Serif', 'Georgia', serif;
-  font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 p + p {
@@ -125,13 +129,10 @@ blockquote {
 }
 
 footer {
-  font-family: 'PT Serif', 'Georgia', serif;
-  font-weight: 400;
   font-size: 0.85rem;
 }
 
 .dropcap {
-  font-family: 'PT Serif', 'Georgia', sans-serif;
   font-size: 2rem;
   display: inline;
 }
@@ -580,7 +581,7 @@ footer {
   float: right;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
