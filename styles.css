@@ -466,7 +466,7 @@ a.museum:hover {
 
 .column__silver h3 {
   font-size: 1.2rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
   text-align: justify;
@@ -501,7 +501,7 @@ a.silverscreen:hover {
 /* BIRTH */
 
 .column__birth h3 {
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
   text-align: justify;
@@ -529,7 +529,7 @@ table {
   font-size: 2rem;
   text-align: justify;
   text-align-last: justify;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
 }
 
 .makeup--img {
@@ -538,18 +538,46 @@ table {
 }
 
 .price__container {
-  display: flex;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price__container--item figcaption{
+  text-align: center;
+  text-align-last: center;
 }
 
 /* CREDITS */
 
 .column__credits h3 {
-  letter-spacing: 3.3px;
+  letter-spacing: 1px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
   text-align: justify;
   text-align-last: justify;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 0 0 0.5rem 0;
+}
+
+.footer__container {
+  padding: 0.3rem 0 0 0;
+}
+.footer__container a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  position: sticky;
+  float: left;
+}
+
+.typography-copyright {
+  position: sticky;
+  float: right;
 }
 
 @media only screen and (max-width: 700px) {
