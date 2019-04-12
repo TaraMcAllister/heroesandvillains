@@ -99,8 +99,13 @@ figcaption:after {
   font-weight: 400;
 }
 
+p {
+  text-align: justify;
+}
+
 p, tbody {
   font-size: 0.9rem;
+  padding-top: 0.2rem;
 }
 
 p + p {
@@ -123,7 +128,20 @@ a {
   font-weight: 400;
   font-size: 0.95rem;
   color: #280D03;
-  text-decoration: none;
+  text-decoration: underline rgba(40, 13, 3, 0.3);
+}
+
+a .finger__container{
+  visibility: hidden;
+}
+
+a:hover .finger__container{
+  visibility: visible;
+  transition: ease-in-out 0.5s;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 blockquote {
@@ -301,7 +319,7 @@ footer {
 .heroes__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0.2rem;
+  grid-gap: 0.5rem;
 }
 
 .heroes__grid--item {
@@ -408,6 +426,7 @@ footer {
 .baker__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
 }
 
 .baker--img {
