@@ -212,7 +212,7 @@ footer {
 .divider--small {
   margin: 0.2rem 0 0 0;
   border: #280D03 1px solid;
-  width: 33.33%;
+  width: 17%;
 }
 
 /* GRID */
@@ -236,7 +236,7 @@ footer {
       "bake bake make make shee"
       "bake bake make make cred"
       "foot foot foot foot foot"; 
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   padding: 0 0.5rem 0 0.5rem;
 }
 
@@ -319,7 +319,7 @@ footer {
 .heroes__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
 
 .heroes__grid--item {
@@ -342,7 +342,6 @@ footer {
   text-align-last: justify;
   font-size: 1.2rem;
   letter-spacing: 9px;
-  line-height: 10px;
   padding: 0 0 0.3rem 0;
 }
 
@@ -357,13 +356,10 @@ footer {
   padding: 0 0 0.1rem 0;
 }
 
-.champ__holder--text {
-  clear: both;
-}
-
 .champ__holder--img {
   float: left;
-  height: 90%;
+  shape-outside: url("images/wine-holder.png");
+  shape-margin: 2%;
 }
 
 /* VILLAINS */
@@ -386,7 +382,7 @@ footer {
 .villains__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0.4rem;
+  grid-gap: 1rem;
 }
 
 .villains--mor {
@@ -426,7 +422,7 @@ footer {
 .baker__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
 
 .baker--img {
