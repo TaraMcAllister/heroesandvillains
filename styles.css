@@ -652,19 +652,59 @@ footer {
         "book"
         "cham"
         "cham"
-        "make"
-        "make"
-        "make"
         "shee"
+        "make"
+        "make"
+        "make"
         "cred"
         "foot";
-    grid-gap: 0.5rem;
+    grid-gap: 0.3rem;
   }
 }
 
 .title__container {
   height: 14rem;
   width: 100%;
+}
+
+/* TYPOGRAPHY   */
+
+h1 {
+  font-size: 3rem;
+}
+
+figcaption {
+  font-size: 0.7rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+/* HIDDEN  */
+
+.column__sheep {
+  display: none;
+}
+
+.column__champagne {
+  display: none;
+}
+
+.column__pipe {
+  display: none;
+}
+
+.column__man {
+  display: none;
+}
+
+.column__violin {
+  display: none;
 }
 
 /* HEADER */
@@ -686,4 +726,76 @@ footer {
 
 /* DYNAMIC DUO */
 
+.heroes__grid {
+  grid-template-columns: 1fr 1fr;
+}
 
+.heroes__grid--image {
+  grid-column: 2/2;
+}
+
+/* SILVER  */
+
+.column__silver {
+  grid-template-columns: 1fr 1fr;
+}
+
+.column__silver h3 {
+  font-size: 3rem;
+  line-height: 21px;
+  padding: 0 0 0.7rem 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.column__wedding h3 {
+  text-align: center;
+  letter-spacing: 24px;
+  padding: 0 0 0rem 0;
+  font-size: 3rem;
+}
+
+.column__villains h1 {
+  letter-spacing: 13px;
+}
+
+.container__img--villain {
+  padding: 0.4rem 0.4rem 0rem 0.4rem;
+}
+
+.column__baker h1 {
+  font-size: 3rem;
+}
+
+.column__steerage h3 {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 45px;
+}
+
+.column__birth h3 {
+  letter-spacing: 13px;
+  line-height: 26px;
+  padding: 0 0 0.7rem 0;
+  font-size: 3rem;
+}
+
+.column__jubilant h3 {
+  letter-spacing: 9px;
+  font-size: 3rem;
+}
+
+.column__makeup h2 {
+  font-size: 3rem;
+  margin-top: -2rem;
+  line-height: 45px;
+  letter-spacing: 10px;
+}
+
+.column__credits h3 {
+  line-height: 17px;
+  padding: 0 0 0.8rem 0;
+  font-size: 3rem;
+}
