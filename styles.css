@@ -312,6 +312,10 @@ footer {
   grid-area: foot;
 }
 
+#divider-hide {
+  display: none;
+}
+
 /* WINE AD */
 
 .wine-holder {
@@ -608,7 +612,12 @@ footer {
   float: right;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
+
+  #divider-hide {
+    display: block;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -808,7 +817,11 @@ p:first-child:first-letter {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
+
+  #divider-hide {
+    display: block;
+  }
 
   .grid {
     grid-template-columns: 1fr;
@@ -864,10 +877,14 @@ p:first-child:first-letter {
 }
 
 .title__container {
-  height: 12rem;
+  height: 13.5rem;
 }
 
 /* HEROES */
+
+.heroes__grid {
+  grid-template-columns: 1fr;
+}
 
 .heroes__grid--image {
   grid-column: 1/1;
@@ -890,48 +907,49 @@ h3 {
 }
 
 .column__wedding h3 {
-  letter-spacing: 17px;
+  letter-spacing: 23px;
   font-size: 2.7rem;
   margin-top: -0.7rem;
   margin-bottom: -0.3rem;
   }
 
-  .column__villains h1 {
-  letter-spacing: 10px;
-  }
+.column__silver h3 {
+  margin-top: -0.7rem;
+  font-size: 2.7rem;
+  line-height: 17px;
+}
+
   .column__villains h1 {
   font-size: 2.7rem;
   padding: 0 0 0.6rem 0;
+  letter-spacing: 16px;
   }
 
   .column__baker h1 {
   font-size: 2.7rem;
-  }
-
-  .column__baker h1 {
-  letter-spacing: 0px;
+  letter-spacing: 2px;
   }
 
   .column__jubilant h3 {
-  letter-spacing: 6px;
+  letter-spacing: 9px;
   font-size: 2.7rem;
   margin-top: -0.5rem;
   margin-bottom: -0.2rem;
   }
 
   .column__birth h3 {
-  letter-spacing: 11px;
+  letter-spacing: 15px;
   font-size: 2.7rem;
   }
 
   .column__steerage h3 {
-  letter-spacing: 0px;
+  letter-spacing: 3px;
   font-size: 2.7rem;
   }
 
   .column__makeup h2 {
   font-size: 2.7rem;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   }
 
   .column__credits h3 {
