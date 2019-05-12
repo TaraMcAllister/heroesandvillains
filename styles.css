@@ -166,10 +166,14 @@ footer {
 }
 
 .title__container {
-  height: 10rem;
+  height: 15.5rem;
   width: 35rem;
-  background-color: #280D03;
   margin: 0.5rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.title__container img {
+  width: 100%;
 }
 
 .header__info {
@@ -434,7 +438,7 @@ footer {
 }
 
 .column__baker h1 {
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   line-height: 40px;
   font-size: 2.7rem;
   padding: 0 0 0.3rem 0;
@@ -461,6 +465,7 @@ a.museum:hover {
   font-size: 1.2rem;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
+  letter-spacing: 3px;
 }
 
 .column__man p {
@@ -477,7 +482,7 @@ a.museum:hover {
   text-align: justify;
   text-align-last: justify;
   font-size: 1.2rem;
-  letter-spacing: 2.3px;
+  letter-spacing: 5px;
 }
 
 /* SILVER */
@@ -489,6 +494,7 @@ a.museum:hover {
   padding: 0 0 0.4rem 0;
   text-align: justify;
   text-align-last: justify;
+  letter-spacing: 2px;
 }
 
 .finger__svg {
@@ -519,7 +525,7 @@ a.silverscreen:hover {
 /* BIRTH */
 
 .column__birth h3 {
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
   text-align: justify;
@@ -534,6 +540,10 @@ a.silverscreen:hover {
 
 .column__steerage {
   text-align: justify;
+}
+
+.column__steerage h3 {
+  letter-spacing: 3.5px;
 }
 
 table {
@@ -568,7 +578,7 @@ table {
 /* CREDITS */
 
 .column__credits h3 {
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   line-height: 8px;
   padding: 0 0 0.4rem 0;
   text-align: justify;
@@ -651,3 +661,29 @@ footer {
     grid-gap: 0.5rem;
   }
 }
+
+.title__container {
+  height: 14rem;
+  width: 100%;
+}
+
+/* HEADER */
+
+.header__info--issue {
+  visibility: none;
+  color: #D4CCBA;
+  margin-left: 0rem;
+}
+
+.header__info--price {
+  visibility: none;
+  display: none
+}
+
+.header__info--date {
+  left: 34vw;
+}
+
+/* DYNAMIC DUO */
+
+
