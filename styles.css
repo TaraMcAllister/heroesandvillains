@@ -635,9 +635,63 @@ footer {
     height: 90%;
   }
 
+  .grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "head head head head head"
+        "hero hero hero viol viol"
+        "hero hero hero mans silv"
+        "hero hero hero jubi silv"
+        "wedd vill vill jubi silv"
+        "wedd vill vill pipe silv"
+        "cham vill vill pipe silv"
+        "bake bake ster ster silv"
+        "bake bake ster ster shee"
+        "bake bake make make shee"
+        "bake bake make make cred"
+        "foot foot foot foot foot"; 
+    grid-gap: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  
+
+  /* HIDDEN  */
+
+.column__sheep {
+  display: block;
 }
 
-@media (min-width: 700px) and (max-width: 950px) {
+.column__champagne {
+  display: block;
+}
+
+.column__pipe {
+  display: block;
+}
+
+.column__man {
+  display: block;
+}
+
+.column__violin {
+  display: block;
+}
+
+.column__birth {
+  display: block;
+}
+
+.column__credits {
+  display: block;
+}
+
+}
+
+@media (min-width: 770px) and (max-width: 950px) {
 
   .header__info--date {
     left: 40vw;
@@ -656,11 +710,37 @@ footer {
   grid-column: 1/1;
 }
 
+.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+      "head head head head"
+      "hero hero mans silv"
+      "hero hero jubi silv"
+      "hero hero jubi silv"
+      "wedd vill vill silv"
+      "wedd vill vill birh"
+      "cham vill vill pipe"
+      "bake bake ster ster"
+      "bake bake ster ster"
+      "bake bake make make"
+      "bake bake make make"
+      "foot foot foot foot"; 
+}
+
+.column__sheep {
+  display: none;
+}
+
 .column__violin {
   display: none;
 }
 
-@media (min-width: 500px) and (max-width: 700px){
+.column__credits {
+  display: none;
+}
+
+
+@media (min-width: 500px) and (max-width: 770px){
 
   #divider-hide {
     display: block;
@@ -798,6 +878,10 @@ p:first-child:first-letter {
   grid-column: 2/2;
 }
 
+.container__heroes--img {
+  text-align: center;
+}
+
 .heroes--img {
   height: 23rem;
 }
@@ -810,7 +894,7 @@ p:first-child:first-letter {
 
 .column__silver h3 {
   font-size: 3rem;
-  line-height: 21px;
+  line-height: 24px;
   padding: 0 0 0.7rem 0;
   text-align: center;
   letter-spacing: 3px;
@@ -819,7 +903,7 @@ p:first-child:first-letter {
 
 .column__wedding h3 {
   text-align: center;
-  letter-spacing: 24px;
+  letter-spacing: 22px;
   padding: 0 0 0rem 0;
   font-size: 3rem;
   margin-top: -0.7rem;
@@ -827,7 +911,7 @@ p:first-child:first-letter {
 }
 
 .column__villains h1 {
-  letter-spacing: 13px;
+  letter-spacing: 12px;
   padding-top: 0.5rem
 }
 
@@ -840,7 +924,7 @@ p:first-child:first-letter {
 }
 
 .column__steerage h3 {
-  letter-spacing: 1px;
+  letter-spacing: 12px;
   font-size: 3rem;
   text-align: justify;
   text-align-last: justify;
@@ -848,7 +932,7 @@ p:first-child:first-letter {
 }
 
 .column__birth h3 {
-  letter-spacing: 13px;
+  letter-spacing: 15px;
   line-height: 26px;
   padding: 0 0 0.7rem 0;
   font-size: 3rem;
@@ -874,6 +958,7 @@ p:first-child:first-letter {
   padding: 0 0 0.8rem 0;
   font-size: 3rem;
   margin-top: 0.5rem;
+  letter-spacing: 5px;
 }
 
 @media (min-width: 300px) and (max-width: 500px){
@@ -967,4 +1052,5 @@ h3 {
   font-size: 2.7rem;
 margin-top: 0.7rem;
   }
+}
 }
