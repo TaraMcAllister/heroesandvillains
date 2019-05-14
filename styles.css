@@ -166,14 +166,14 @@ footer {
 }
 
 .title__container {
-  height: 15.5rem;
+  height: 17rem;
   width: 35rem;
   margin: 0.5rem 0 0.5rem 0;
   text-align: center;
 }
 
 .title__container img {
-  width: 100%;
+  height: 100%;
 }
 
 .header__info {
@@ -233,7 +233,7 @@ footer {
       "hero hero hero mans silv"
       "hero hero hero jubi silv"
       "wedd vill vill jubi silv"
-      "wedd vill vill jubi silv"
+      "wedd vill vill pipe silv"
       "cham vill vill pipe silv"
       "bake bake ster ster birh"
       "bake bake ster ster shee"
@@ -339,7 +339,6 @@ footer {
 }
 
 .heroes--img {
-  height: 90%;
   max-width: 100%;
 }
 
@@ -612,7 +611,56 @@ footer {
   float: right;
 }
 
-@media (max-width: 670px) {
+@media (min-width: 950px) {
+
+  .header__info--date {
+    left: 40vw;
+  }
+
+  .heroes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  .heroes__grid--item {
+    grid-column: 1/1;
+  }
+  
+  .heroes__grid--image {
+    grid-column: 2/4;
+  }
+
+  .heroes--img {
+    height: 90%;
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+
+  .header__info--date {
+    left: 40vw;
+  }
+}
+
+.heroes__grid {
+  grid-template-columns: 1fr;
+}
+
+.heroes__grid--item{
+  grid-column: 1/1;
+}
+
+.heroes__grid--image {
+  grid-column: 1/1;
+}
+
+.column__violin {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 700px){
 
   #divider-hide {
     display: block;
@@ -669,7 +717,6 @@ footer {
         "foot";
     grid-gap: 0.3rem;
   }
-}
 
 .title__container {
   height: 14rem;
@@ -751,6 +798,10 @@ p:first-child:first-letter {
   grid-column: 2/2;
 }
 
+.heroes--img {
+  height: 23rem;
+}
+
 /* SILVER  */
 
 .column__silver {
@@ -763,6 +814,7 @@ p:first-child:first-letter {
   padding: 0 0 0.7rem 0;
   text-align: center;
   letter-spacing: 3px;
+  margin-top: -0.6rem;
 }
 
 .column__wedding h3 {
@@ -770,10 +822,13 @@ p:first-child:first-letter {
   letter-spacing: 24px;
   padding: 0 0 0rem 0;
   font-size: 3rem;
+  margin-top: -0.7rem;
+  margin-bottom: -0.5rem;
 }
 
 .column__villains h1 {
   letter-spacing: 13px;
+  padding-top: 0.5rem
 }
 
 .container__img--villain {
@@ -797,11 +852,14 @@ p:first-child:first-letter {
   line-height: 26px;
   padding: 0 0 0.7rem 0;
   font-size: 3rem;
+  margin-top: 0.3rem;
 }
 
 .column__jubilant h3 {
   letter-spacing: 9px;
   font-size: 3rem;
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
 }
 
 .column__makeup h2 {
@@ -815,69 +873,18 @@ p:first-child:first-letter {
   line-height: 17px;
   padding: 0 0 0.8rem 0;
   font-size: 3rem;
+  margin-top: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px){
 
   #divider-hide {
     display: block;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "head"
-        "head"
-        "hero"
-        "hero"
-        "hero"
-        "hero"
-        "viol"
-        "viol"
-        "mans"
-        "silv"
-        "silv"
-        "silv"
-        "silv"
-        "wedd"
-        "wedd"
-        "wedd"
-        "vill"
-        "vill"
-        "vill"
-        "vill"
-        "vill"
-        "vill"
-        "vill"
-        "pipe"
-        "bake"
-        "bake"
-        "bake"
-        "bake"
-        "jubi"
-        "jubi"
-        "jubi"
-        "birh"
-        "ster"
-        "ster"
-        "ster"
-        "book"
-        "book"
-        "cham"
-        "cham"
-        "shee"
-        "make"
-        "make"
-        "make"
-        "cred"
-        "foot";
-    grid-gap: 0.3rem;
-  }
-}
-
 .title__container {
   height: 13.5rem;
+  width: 100%;
 }
 
 /* HEROES */
@@ -888,6 +895,10 @@ p:first-child:first-letter {
 
 .heroes__grid--image {
   grid-column: 1/1;
+}
+
+.heroes--img {
+  text-align: center;
 }
 
 /* TYPOGRAPHY */
@@ -954,4 +965,6 @@ h3 {
 
   .column__credits h3 {
   font-size: 2.7rem;
+margin-top: 0.7rem;
   }
+}
